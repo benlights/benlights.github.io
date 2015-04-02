@@ -1,109 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>DBC Blog</title>
-  <meta name="author" content="Mendel Schneerson">
-
-  
-  <meta name="description" content="Week Eight Technical Blog Post March 28, 2015 Little Bobby Tables Today I will be writing about SQL Injection. SQL Injection is a way to insert code &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://benlights.github.io/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="DBC Blog" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-61433341-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">DBC Blog</a></h1>
-  
-    <h2>A Look At Some of The Things I Learned During Phase 0.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="sitesearch" value="benlights.github.io">
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/about-me/">About Me</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[DBC Blog]]></title>
+  <link href="http://benlights.github.io/atom.xml" rel="self"/>
+  <link href="http://benlights.github.io/"/>
+  <updated>2015-04-01T22:09:05-04:00</updated>
+  <id>http://benlights.github.io/</id>
+  <author>
+    <name><![CDATA[Mendel Schneerson]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2015/04/01/sql-injection/">SQL Injection</a></h1>
-    
-    
-      <p class="meta">
-        
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
-
-
-
-<time class='entry-date' datetime='2015-04-01T21:36:19-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:36 pm</span></time>
-        
-           | <a href="/blog/2015/04/01/sql-injection/#disqus_thread"
-             data-disqus-identifier="http://benlights.github.io/blog/2015/04/01/sql-injection/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>Week Eight Technical Blog Post</h4>
+  
+  <entry>
+    <title type="html"><![CDATA[SQL Injection]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/sql-injection/"/>
+    <updated>2015-04-01T21:36:19-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/sql-injection</id>
+    <content type="html"><![CDATA[<h4>Week Eight Technical Blog Post</h4>
 
 <h5>March 28, 2015</h5>
 
@@ -131,38 +46,15 @@
 <p>This statement would return all the names in the database because<code>1 = 1</code> is always true.</p>
 
 <p>This vulnerability can also be exploited to delete or modify data in the database. See the story of<a href="https://xkcd.com/327/"> Little Bobby Tables.</a></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/04/01/ruby-vs-javascript/">Ruby vs JavaScript</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-01T21:33:19-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:33 pm</span></time>
-        
-           | <a href="/blog/2015/04/01/ruby-vs-javascript/#disqus_thread"
-             data-disqus-identifier="http://benlights.github.io/blog/2015/04/01/ruby-vs-javascript/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>Week Seven Technical Blog Post</h4>
+  <entry>
+    <title type="html"><![CDATA[Ruby vs JavaScript]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/ruby-vs-javascript/"/>
+    <updated>2015-04-01T21:33:19-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/ruby-vs-javascript</id>
+    <content type="html"><![CDATA[<h4>Week Seven Technical Blog Post</h4>
 
 <h5>March 22, 2015</h5>
 
@@ -173,38 +65,15 @@
 <p>Hope you enjoy!</p>
 
 <p><a href="http://www.youtube.com/watch?v=tlR_Th2EaBg"><img src="http://img.youtube.com/vi/tlR_Th2EaBg/0.jpg" alt="" /></a></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/04/01/when-to-use-what/">When to Use What</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-01T21:30:24-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:30 pm</span></time>
-        
-           | <a href="/blog/2015/04/01/when-to-use-what/#disqus_thread"
-             data-disqus-identifier="http://benlights.github.io/blog/2015/04/01/when-to-use-what/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>Week Six Technical Blog Post</h4>
+  <entry>
+    <title type="html"><![CDATA[When to Use What]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/when-to-use-what/"/>
+    <updated>2015-04-01T21:30:24-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/when-to-use-what</id>
+    <content type="html"><![CDATA[<h4>Week Six Technical Blog Post</h4>
 
 <h5>March 15, 2015</h5>
 
@@ -219,38 +88,15 @@
 <p>Class variables are similar to instance variables but it is shared across all instances of the class. Going on the earlier example <code>@@gear</code> will now be accessible not just to mountain_bike but to any instance of Bike. Class variables start with <code>@@</code>.</p>
 
 <p>Global variables start with an <code>$</code> and are discouraged from use. This is because they can be read and changed from anywhere in the code and this makes it very hard to track down bugs. They are accessible to any and every bit of code.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/04/01/chutes-and-ladders-or-d-and-d/">Chutes and Ladders or D&amp;D?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-01T21:28:47-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:28 pm</span></time>
-        
-           | <a href="/blog/2015/04/01/chutes-and-ladders-or-d-and-d/#disqus_thread"
-             data-disqus-identifier="http://benlights.github.io/blog/2015/04/01/chutes-and-ladders-or-d-and-d/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>Week Five Technical Blog Post</h4>
+  <entry>
+    <title type="html"><![CDATA[Chutes and Ladders or D&amp;D?]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/chutes-and-ladders-or-d-and-d/"/>
+    <updated>2015-04-01T21:28:47-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/chutes-and-ladders-or-d-and-d</id>
+    <content type="html"><![CDATA[<h4>Week Five Technical Blog Post</h4>
 
 <h5>March 8, 2015</h5>
 
@@ -258,7 +104,7 @@
 
 <p>This is an example of a class.</p>
 
-<p><img src="/images/class-die.png" alt="" /></p>
+<p><img src="http://benlights.github.io/images/class-die.png" alt="" /></p>
 
 <p>This class creates a die that can be used to play various games. Let us break up the code step by step.</p>
 
@@ -271,38 +117,15 @@
 <p>This class is very useful it can be used for a simple game of Chutes and Ladders or a complicated many sided die used in D&amp;D. Because we have created this class we can do whatever we want with it. We can give it as many sides as we want, we can put what ever we want on them. With a little tinkering we can even make it return more than one side every time we call &ldquo;roll&rdquo; on the die.</p>
 
 <p>So what are you waiting for go and have fun!</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/04/01/enumerable-methods/">Enumerable Methods</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-01T21:27:12-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:27 pm</span></time>
-        
-           | <a href="/blog/2015/04/01/enumerable-methods/#disqus_thread"
-             data-disqus-identifier="http://benlights.github.io/blog/2015/04/01/enumerable-methods/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>Week Four Technical Blog Post</h4>
+  <entry>
+    <title type="html"><![CDATA[Enumerable Methods]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/enumerable-methods/"/>
+    <updated>2015-04-01T21:27:12-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/enumerable-methods</id>
+    <content type="html"><![CDATA[<h4>Week Four Technical Blog Post</h4>
 
 <h5>February 28, 2015</h5>
 
@@ -314,49 +137,26 @@
 
 <p>Here is some code that will show you how it works.</p>
 
-<p><img src="/images/group_by-length.png" alt="" /></p>
+<p><img src="http://benlights.github.io/images/group_by-length.png" alt="" /></p>
 
 <p>In this example x was set to an array holding some strings, group_by was called to separate the strings by their length. The output was a hash<code>5 =&gt;["hello"] 3=&gt;["how", "are", "you"]</code> it grouped the strings the word &ldquo;hello&rdquo; has five letters as the key shows us, and the others all had three letters and are grouped together under the &ldquo;3&rdquo; key.</p>
 
 <p>Another code example.</p>
 
-<p><img src="/images/group_by-modulus.png" alt="" /></p>
+<p><img src="http://benlights.github.io/images/group_by-modulus.png" alt="" /></p>
 
 <p>In this code snippet we ran the range 1 through 20 (that&rsquo;s what (1..20) means) and separated them by the remainders of four. They are grouped by what the remainder would be if the number was divided by four.</p>
 
 <p>This is a very useful tool to have when you are trying to separate items.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/04/01/arrays-vs-hashes/">Arrays vs. Hashes</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-01T21:25:45-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:25 pm</span></time>
-        
-           | <a href="/blog/2015/04/01/arrays-vs-hashes/#disqus_thread"
-             data-disqus-identifier="http://benlights.github.io/blog/2015/04/01/arrays-vs-hashes/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>Week Three Technical Blog Post</h4>
+  <entry>
+    <title type="html"><![CDATA[Arrays vs. Hashes]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/arrays-vs-hashes/"/>
+    <updated>2015-04-01T21:25:45-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/arrays-vs-hashes</id>
+    <content type="html"><![CDATA[<h4>Week Three Technical Blog Post</h4>
 
 <h5>February 22, 2015</h5>
 
@@ -387,38 +187,15 @@
       }</code></p>
 
 <p>Now I have to call &lsquo;kitten&rsquo; to get back cat.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/04/01/fat-stacks/">Fat Stacks</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-01T21:22:40-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:22 pm</span></time>
-        
-           | <a href="/blog/2015/04/01/fat-stacks/#disqus_thread"
-             data-disqus-identifier="http://benlights.github.io/blog/2015/04/01/fat-stacks/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>Week Two Technical Blog Post</h4>
+  <entry>
+    <title type="html"><![CDATA[Fat Stacks]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/fat-stacks/"/>
+    <updated>2015-04-01T21:22:40-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/fat-stacks</id>
+    <content type="html"><![CDATA[<h4>Week Two Technical Blog Post</h4>
 
 <h5>February 15, 2015</h5>
 
@@ -431,38 +208,15 @@
 <p>Borders: Borders can be invisible or as wide as the page, they can also be anything in between. Borders encompass every element we have on the page. The border on some boxes my be set to zero pixels (a measurement of screen size) you may not see them but they are always there. Borders separate the edges of the boxes they contain. You can set a specific border to be blue or indigo dotted or dashed thick or thin. There is really no end to the combinations that can be made.</p>
 
 <p>Padding: Padding is the lowest level of space between the contents of a box and it edges. Padding fits in between the border and the contents. Many times when a border has been set around a box filled with text, it is difficult to read as it butts up against the border. Padding gives the ability to create &ldquo;white space&rdquo; in between the text and the border.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/04/01/there-is-no-try-only-do/">There Is No Try Only Do</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-01T21:21:13-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:21 pm</span></time>
-        
-           | <a href="/blog/2015/04/01/there-is-no-try-only-do/#disqus_thread"
-             data-disqus-identifier="http://benlights.github.io/blog/2015/04/01/there-is-no-try-only-do/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>Week One Technical Blog Post</h4>
+  <entry>
+    <title type="html"><![CDATA[There Is No Try Only Do]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/there-is-no-try-only-do/"/>
+    <updated>2015-04-01T21:21:13-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/there-is-no-try-only-do</id>
+    <content type="html"><![CDATA[<h4>Week One Technical Blog Post</h4>
 
 <h5>February 5, 2015</h5>
 
@@ -473,38 +227,15 @@
 <p>Git, sounds like an insult from the old south doesn&rsquo;t it? Slow down, the inventor is not American and cannot be blamed for how it may make you feel.(He actually stated that it is named after him; git being a British insult meaning &ldquo;jerk&rdquo;). His name is Linus Torvalds and is mostly famous for creating Linux an open source operating system (this is being written on a machine running Linux). So what does git actually do, you ask? Git is what you use to save your game as we alluded to earlier ,and recall (or revert) to that (or any other saved) point in time/development. Git also has tools to combine changes and has a detailed log of every edit. But what about multiple developers? If you are in Bora Bora and your partner is in Nome? No problem thats what GitHub is for.</p>
 
 <p>GitHub is a website that is big into anime. Don&rsquo;t believe me? Their logo is a cross between an octopus and a cat called Octocat. This Octocat passes git repositories between developers. Ha I know I&rsquo;m pretty lame I can&rsquo;t help it. To stick with gaming analogies GitHub is like playing on Steam. You download the game from Steam and play it on your computer but many stats are saved online. GitHub is similar in it that it allows people to upload projects online making it possible for anyone to download it to their own computer and make improvements. After working on their locally downloaded copy users are then able to &ldquo;push&rdquo; it back to GitHub, where it gets reviewed and if found to be useful, added and merged with the main repository. There are millions of public repos on GitHub currently, with more being added every day. So come on and join us its never too late.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/04/01/dbc-cheat-sheet/">DBC Cheat Sheet</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-01T21:19:02-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:19 pm</span></time>
-        
-           | <a href="/blog/2015/04/01/dbc-cheat-sheet/#disqus_thread"
-             data-disqus-identifier="http://benlights.github.io/blog/2015/04/01/dbc-cheat-sheet/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>Ruby Hashes, Arrays, Strings, Integers</h3>
+  <entry>
+    <title type="html"><![CDATA[DBC Cheat Sheet]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/dbc-cheat-sheet/"/>
+    <updated>2015-04-01T21:19:02-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/dbc-cheat-sheet</id>
+    <content type="html"><![CDATA[<h3>Ruby Hashes, Arrays, Strings, Integers</h3>
 
 <h4>Hashes</h4>
 
@@ -591,38 +322,15 @@ One more form of array creation is as follows :<code>nums = Array[1, 2, 3, 4,5]<
 <p><code>Round([ndigits]) → integer or float</code>Rounds int to a given precision in decimal digits (default 0 digits). Precision may be negative. Returns a floating point number when ndigits is positive, self for zero, and round down for negative.</p>
 
 <p><code>chr([encoding]) → string</code>Returns a string containing the character represented by the int‘s value according to encoding.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/04/01/conflict/">Conflict</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-01T21:16:57-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:16 pm</span></time>
-        
-           | <a href="/blog/2015/04/01/conflict/#disqus_thread"
-             data-disqus-identifier="http://benlights.github.io/blog/2015/04/01/conflict/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>Week Eight Cultural Blog Post</h4>
+  <entry>
+    <title type="html"><![CDATA[Conflict]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/conflict/"/>
+    <updated>2015-04-01T21:16:57-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/conflict</id>
+    <content type="html"><![CDATA[<h4>Week Eight Cultural Blog Post</h4>
 
 <h5>March 29, 2015</h5>
 
@@ -639,137 +347,125 @@ One more form of array creation is as follows :<code>nums = Array[1, 2, 3, 4,5]<
 <p>If I can change the past I would go back and and change the way I spoke to him. I would speak in a calm and collected manner and not show him my aggravation.</p>
 
 <p>I learned from this experience to control my emotions better and not to let the other person see that he or she has effected me.</p>
-</div>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[Combating Stereotype Threat]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/combating-stereotype-threat/"/>
+    <updated>2015-04-01T21:15:45-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/combating-stereotype-threat</id>
+    <content type="html"><![CDATA[<h4>Week Seven Cultural Blog Post</h4>
+
+<h5>March 22, 2015</h5>
+
+<h3>Values in my life</h3>
+
+<p>Last week I wrote about Stereotype Threat and this week I will be addressing some values in my life that I feel can help me avoid it and work around it.</p>
+
+<p>Some of the times in my life when I&rsquo;ve been the happiest, the proudest, or the most satisfied have been when I have felt accomplishment and competence. I think that both of these values are important to to have to help yourself and to build self confidence. When a person feels that they have accomplished something noteworthy they are buoyed by that fact and it helps them later on when they fail at something and want to give up.</p>
+
+<p>I think that if someone is experiencing Stereotype Threat they can think back at all they have accomplished and shake off the feeling that they are not good enough just because people think so. Innate self worth is important to everyone in every stage in life.</p>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[Stereotype Threat]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/stereotype-threat/"/>
+    <updated>2015-04-01T21:14:21-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/stereotype-threat</id>
+    <content type="html"><![CDATA[<h4>Week Six Cultural Blog Post.</h4>
 
+<h5>March 15, 2015</h5>
 
-    </article>
+<h3>What is Stereotype Threat?</h3>
+
+<p>This week I will be writing about an issue called Stereotype Threat. To quote from Wikipedia: &ldquo;Stereotype threat is a situational predicament in which people are or feel themselves to be at risk of confirming negative stereotypes about their social group.&rdquo; In other words it is a mechanism that can cause lowered intellectual performance in the person that is experiencing it.</p>
+
+<p>Thankfully to my knowledge I have not been impacted by Stereotype Threat. Being a religious Jew I have heard from my grandmother how the daily discrimination she faced in the former Soviet Union, impacted her in every facet of life. Unfortunately even here in the United States there are people that are being discriminated against even if not in a institutional way. This discrimination effects them even many years down the road.</p>
+
+<p>In my opinion one of the things everybody can do to reduce the occurrence of Stereotype Threat is by providing role-models that actively disprove the racial stereotype and show that no matter who a person is it can be done.</p>
+]]></content>
+  </entry>
   
-  <div class="pagination">
-    
-      <a class="prev" href="/posts/2">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
+  <entry>
+    <title type="html"><![CDATA[Dealing With Human Beings.]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/dealing-with-human-beings/"/>
+    <updated>2015-04-01T21:13:09-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/dealing-with-human-beings</id>
+    <content type="html"><![CDATA[<h4>Week Five Cultural Blog Post.</h4>
+
+<h5>March 8, 2015</h5>
+
+<h3>Pairing and Feedback.</h3>
+
+<p>Today I will be talking about something that was absolutely foreign to me before I joined DBC.</p>
+
+<p>I have always been a loner when it came to work. It might not have been on purpose but that is the way it has been for as long as I can recall. When I read in the Phase 0 manual about mandatory pairing I was worried that it would be stilted for me and unproductive. The first few pairing sessions seemed to support my hypothesis as they were not hard but I did not feel like I was gaining much from them. However when I started pairing on actual coding challenges the time flew by and by the end of the session I was very proud of my work. Initializing a pairing session is still hard for me but once I get into the meat of the issue it becomes us vs. the code.</p>
+
+<p>In DBC pairing does not come alone. After every session you have to leave feedback for your partner. Reading some of the feedback I received in the beginning was hard. I knew I had to improve but it is easier to blame others but my own shortcomings. Determined to do something about it I started off every video call with a disclaimer: &ldquo;I have been informed that sometimes I can get ahead of myself and speak too quickly possibly overriding your ideas. If you feel that I am doing that please point it out to me and help me I am trying to change&rdquo;. Ever since then my feedback has improved and I have and overwhelming majority of positive feedback.</p>
+
+<p>Writing feedback on the other hand is another animal entirely. It is hard to point out something that is bothering you about your pair particularly when the session has gone swimmingly otherwise. What I learned is that the session in general has to be framed was it good, great or just mediocre? Once the outline has been written it is easier to write feedback that confirms to the three rules. A.S.K (Actionable, Specific, and Kind)</p>
+
+<p>In conclusion DBC&rsquo;s system has helped me immensely, notwithstanding the fact that it was extremely hard for me in the beginning to give and receive feedback the correct way. Once I had gotten over the hump I actively look to see what feedback I have been given and how I can improve based off of it.</p>
+]]></content>
+  </entry>
   
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2015/04/01/sql-injection/">SQL Injection</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/04/01/ruby-vs-javascript/">Ruby vs JavaScript</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/04/01/when-to-use-what/">When to Use What</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/04/01/chutes-and-ladders-or-d-and-d/">Chutes and Ladders or D&amp;D?</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/04/01/enumerable-methods/">Enumerable Methods</a>
-      </li>
-    
-  </ul>
-</section>
+  <entry>
+    <title type="html"><![CDATA[Leaping Before Looking]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/leaping-before-looking/"/>
+    <updated>2015-04-01T21:10:36-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/leaping-before-looking</id>
+    <content type="html"><![CDATA[<h4>Week Four Cultural Blog Post</h4>
 
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
+<h5>February 28, 2015</h5>
+
+<h3>Technology Doesn&rsquo;t Always Work.</h3>
+
+<p>We have to face the facts, tech does not always work and when it fails the results can be disastrous. There are a plethora of examples to choose from, from aircraft that are stuck on the ground because the computer systems in the control tower are down, to aircraft that fall out of the sky. On a weekly basis some thing on this earth malfunctions and people get hurt.</p>
+
+<p>To exacerbate the situation a lot of technology gets pushed into mainstream use before it is finished and the major bugs worked out. From new medical treatment to wearable gadgets, technology has a history of failing at first. Unfortunately people die from these mishaps.</p>
+
+<p>I.m.h.o. many of these disasters can be avoided if the people that make the decision to release the technology have training in that field. This does not mean that the entire board has to be PHDs rather the final arbiter for release should be a third party that is involved and qualified in the field. This removes the monetary pressure to release tech that is faulty and at the same time leaves a clear chain of responsibility in event of a preventable bug.</p>
+]]></content>
+  </entry>
   
-  <a href="https://github.com/benlights">@benlights</a> on GitHub
+  <entry>
+    <title type="html"><![CDATA[Mind Over Matter]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/mind-over-matter/"/>
+    <updated>2015-04-01T21:09:11-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/mind-over-matter</id>
+    <content type="html"><![CDATA[<h4>Week Three Cultural Blog Post.</h4>
+
+<h5>February 22, 2015</h5>
+
+<h3>Thinking Styles</h3>
+
+<p>We have just finished Unit One in Dev Bootcamp. It was tough it was fun and most of all it was a lesson to myself about myself. I know that sounds pretty strange but bear with me. One of the main tenants of DBC is feedback. Looking at the feedback I have received over the past three weeks has made it obvious to me what I have to work on.</p>
+
+<p>After getting accepted to DBC we had to fill out a long questionnaire about ourselves and how we think. One of the objects was to identify what type of learner we are. According to Anthony F. Gregorc&rsquo;s Mind Styles there are four main qualities that people have when it comes to learning and assimilating information. Each type has its&#8217; own strengths and weaknesses. For more information see<a href="http://web.cortland.edu/andersmd/learning/gregorc.htm">here</a>. To quote him &ldquo;No one is a &#8220;pure&rdquo; style. Each of us have a unique combination of natural strengths and abilities.&ldquo; But each person has one stronger &#8220;ability&rdquo; in the way he interacts with learning.</p>
+
+<p>When I took the quiz to test my learning pattern(link is<a href="http://www.thelearningweb.net/personalthink.html"> here</a>) overall it was pretty equal with one pattern edging out the others by one point. For me it was Abstract Sequential (AS). Looking at the list of what an AS type of learner likes and dislikes brings me right back to my earlier musing on feedback. In most of my feedback I have been given there is a sentence there about me going too fast or speaking over the other person. Working on this and the rest of the items on the list of what is hard for AS learners will be my personal challenge over the next few months at DBC.</p>
+]]></content>
+  </entry>
   
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
+  <entry>
+    <title type="html"><![CDATA[Fireside Chat]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/01/fireside-chat/"/>
+    <updated>2015-04-01T21:01:40-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/01/fireside-chat</id>
+    <content type="html"><![CDATA[<h4>Week One Cultural Blog Post</h4>
 
-        github.showRepos({
-            user: 'benlights',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
+<h5>February 6, 2015</h5>
 
+<h3>Getting there one step at a time.</h3>
 
+<p>Learning is fun, exhilarating, life changing and scary. Looking back at the past week I can see a glimpse of the future. Hard work and much satisfaction is my fate.</p>
 
-<section class="googleplus googleplus-hidden">
-  <h1>
-    <a href="https://plus.google.com/+MendelSchneerson?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
+<p>It is difficult to take a small fraction of time and extrapolate what will be for the next 18 weeks. But after reading, listening and watching about DevBootCamp I can honestly say that my expectations have stayed true to form. This week is the first taste of a delicious feast. I have been looking for a long time for a structured learning environment where I can learn and grow. I am excited and thankful that I have found DevBootCamp.</p>
 
-
-
+<p>After receiving the curriculum I was feeling overwhelmed, so much to do; so little time. However after going through the challenges and seeing how competently they were arranged I feel that I can swim. The greatest thing is that I am not going about it on my own. I have my cohort and instructors to support me. The tools are being given to me but I will have to make them my own.</p>
+]]></content>
+  </entry>
   
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Mendel Schneerson -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'benlights';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

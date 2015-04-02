@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>DBC Cheat Sheet - DBC Blog</title>
+  <meta name="author" content="Mendel Schneerson">
+
+  
+  <meta name="description" content="Ruby Hashes, Arrays, Strings, Integers Hashes If you attempt to access a hash with a key that does not exist, the method will return nil. You can &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://benlights.github.io/blog/2015/04/01/dbc-cheat-sheet/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="DBC Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-61433341-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">DBC Blog</a></h1>
+  
+    <h2>A Look At Some of The Things I Learned During Phase 0.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="benlights.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about-me/">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">DBC Cheat Sheet</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-04-01T21:19:02-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:19 pm</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://benlights.github.io">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h3>Ruby Hashes, Arrays, Strings, Integers</h3>
+
+<h4>Hashes</h4>
+
+<p>If you attempt to access a hash with a key that does not exist, the method will return nil.</p>
+
+<p>You can create an empty hash with the new class method:<code>months = Hash.new</code></p>
+
+<p>You can also use new to create a hash with a default value, which is otherwise just nil:<code>months = Hash.new( "month" )</code>or<code>months = Hash.new "month"</code></p>
+
+<p>You can use any Ruby object as a key or value, even an array, so following example is a valid
+<code>[1,"jan"] =&gt; "January"</code></p>
+
+<h5>A list of useful methods.</h5>
+
+<p><code>hash.delete_if { |key,value| block }</code>
+Deletes a key-value pair from hash for every pair the block evaluates to true.</p>
+
+<p><code>hash.each { |key,value| block }</code>
+Iterates over hash, calling the block once for each key, passing the key-value as a two-element array.</p>
+
+<p><code>hash.each_key { |key| block }</code>Iterates over hash, calling the block once for each key, passing key as a parameter.</p>
+
+<p><code>hash.each_key { |key_value_array| block }</code>Iterates over hash, calling the block once for each key, passing the key and value as parameters.</p>
+
+<p><code>hash.each_key { |value| block }</code>Iterates over hash, calling the block once for each key, passing value as a parameter.</p>
+
+<p><code>hash.empty?</code>Tests whether hash is empty (contains no key-value pairs), returning true or false.</p>
+
+<h4>Arrays</h4>
+
+<p>Creating Arrays:<br/>
+One way is with the new class method:<code>names = Array.new</code><br/>
+You can set the size of an array at the time of creating array:<code>names = Array.new(20)</code><br/>
+here is another method of Array, []. It works like this:<code>nums = Array.[](1, 2, 3, 4,5)</code><br/>
+One more form of array creation is as follows :<code>nums = Array[1, 2, 3, 4,5]</code></p>
+
+<h5>A list of useful methods.</h5>
+
+<p><code>array.clear</code>Removes all elements from array.</p>
+
+<p><code>array.collect { |item| block } [or]``array.map { |item| block }</code>Invokes block once for each element of self. Creates a new array containing the values returned by the block.</p>
+
+<p><code>array.collect! { |item| block } [or] array.map! { |item| block }</code>Invokes block once for each element of self, replacing the element with the value returned by block.</p>
+
+<p><code>array.delete_if { |item| block }</code>Deletes every element of self for which block evaluates to true.</p>
+
+<p><code>array.each { |item| block }</code>Calls block once for each element in self, passing that element as a parameter.</p>
+
+<p><code>array.each_index { |index| block }</code>Same as Array#each, but passes the index of the element instead of the element itself. array.empty? Returns true if the self array contains no elements.</p>
+
+<p><code>array.eql?(other)</code>Returns true if array and other are the same object, or are both arrays with the same content.</p>
+
+<h4>Strings</h4>
+
+<h5>A list of useful methods.</h5>
+
+<p><code>str * integer</code>Returns a new string containing integer times str. In other words, str is repeated integer imes.</p>
+
+<p><code>str.capitalize</code>Capitalizes a string.</p>
+
+<p><code>str.casecmp</code>Makes a case-insensitive comparison of strings.</p>
+
+<p><code>str.chop</code>Removes the last character in str.</p>
+
+<p><code>str.downcase</code>Returns a copy of str with all uppercase letters replaced with lowercase.</p>
+
+<p><code>str.include? other_str [or] str.include? fixnum</code>Returns true if str contains the given string or character.
+<code>str.reverse</code>Returns a new string with the characters from str in reverse order.</p>
+
+<p><code>str.split(pattern=$;, [limit])</code>Divides str into substrings based on a delimiter, returning an array of these substrings. If pattern is a String, then its contents are used as the delimiter when splitting str. If pattern is a single space, str is split on whitespace, with leading whitespace and runs of contiguous whitespace characters ignored.</p>
+
+<p><code>str.swapcase</code>Returns a copy of str with uppercase alphabetic characters converted to lowercase and lowercase characters converted to uppercase.</p>
+
+<h4>Integers</h4>
+
+<h5>A list of useful methods.</h5>
+
+<p><code>next → integer</code> Returns the Integer equal to int + 1, same as #next.</p>
+
+<p><code>pred → integer</code>Returns the Integer equal to int</p>
+
+<p><code>odd? → true or false</code>Returns true if int is an odd number.</p>
+
+<p><code>Round([ndigits]) → integer or float</code>Rounds int to a given precision in decimal digits (default 0 digits). Precision may be negative. Returns a floating point number when ndigits is positive, self for zero, and round down for negative.</p>
+
+<p><code>chr([encoding]) → string</code>Returns a string containing the character represented by the int‘s value according to encoding.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Mendel Schneerson</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-04-01T21:19:02-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:19 pm</span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://benlights.github.io/blog/2015/04/01/dbc-cheat-sheet/" data-via="mendelsla" data-counturl="http://benlights.github.io/blog/2015/04/01/dbc-cheat-sheet/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/04/01/conflict/" title="Previous Post: Conflict">&laquo; Conflict</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2015/04/01/there-is-no-try-only-do/" title="Next Post: There is no try only do">There is no try only do &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/04/01/sql-injection/">SQL Injection</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/01/ruby-vs-javascript/">Ruby vs JavaScript</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/01/when-to-use-what/">When to Use What</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/01/chutes-and-ladders-or-d-and-d/">Chutes and Ladders or D&amp;D?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/01/enumerable-methods/">Enumerable Methods</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/benlights">@benlights</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'benlights',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus googleplus-hidden">
+  <h1>
+    <a href="https://plus.google.com/+MendelSchneerson?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Mendel Schneerson -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'benlights';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://benlights.github.io/blog/2015/04/01/dbc-cheat-sheet/';
+        var disqus_url = 'http://benlights.github.io/blog/2015/04/01/dbc-cheat-sheet/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

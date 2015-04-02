@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Chutes and Ladders or D&amp;D? - DBC Blog</title>
+  <meta name="author" content="Mendel Schneerson">
+
+  
+  <meta name="description" content="Week Five Technical Blog Post March 8, 2015 Classes and How To Use Them. This is an example of a class. This class creates a die that can be used to &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://benlights.github.io/blog/2015/04/01/chutes-and-ladders-or-d-and-d/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="DBC Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-61433341-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">DBC Blog</a></h1>
+  
+    <h2>A Look At Some of The Things I Learned During Phase 0.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="benlights.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about-me/">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Chutes and Ladders or D&amp;D?</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-04-01T21:28:47-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:28 pm</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://benlights.github.io">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h4>Week Five Technical Blog Post</h4>
+
+<h5>March 8, 2015</h5>
+
+<h3>Classes and How To Use Them.</h3>
+
+<p>This is an example of a class.</p>
+
+<p><img src="/images/class-die.png" alt="" /></p>
+
+<p>This class creates a die that can be used to play various games. Let us break up the code step by step.</p>
+
+<p>The first step is to call the &ldquo;Class&rdquo; method, we do that by writing &ldquo;class&rdquo; and then the name we want to give it.(In this case Die. (Classes start with capital letters.)) Now it is time to call the attributes. An &ldquo;attribute&rdquo; is a method built in to the class &ldquo;class&rdquo;, in this case &ldquo;reader&rdquo; lets us read the amount of side the die has after we create it. Here we get to the methods the live in the Die class. The method &ldquo;initialize&rdquo; is used when creating most classes and it is what we use to set the amount of sides and what we want written on them. The next bit of code makes sure that we create a die with a minimum of one side.</p>
+
+<p>Now comes the fun part do you see &ldquo;@label&rdquo; and &ldquo;@sides&rdquo;? They are what is called an instance variable, this means they can be used by any method that is contained in the class. All instance variables start with an &ldquo;@&rdquo; and they follow the same naming conventions that normal variables have.</p>
+
+<p>After this we have a new method, a method that is contained in a class is called a instance method. This means it can only be called on an object of of the Die class. In our method &ldquo;roll&rdquo; we roll the die and it gives us one of the sides that we initialized the die with.</p>
+
+<p>This class is very useful it can be used for a simple game of Chutes and Ladders or a complicated many sided die used in D&amp;D. Because we have created this class we can do whatever we want with it. We can give it as many sides as we want, we can put what ever we want on them. With a little tinkering we can even make it return more than one side every time we call &ldquo;roll&rdquo; on the die.</p>
+
+<p>So what are you waiting for go and have fun!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Mendel Schneerson</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-04-01T21:28:47-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:28 pm</span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://benlights.github.io/blog/2015/04/01/chutes-and-ladders-or-d-and-d/" data-via="mendelsla" data-counturl="http://benlights.github.io/blog/2015/04/01/chutes-and-ladders-or-d-and-d/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/04/01/enumerable-methods/" title="Previous Post: Enumerable Methods">&laquo; Enumerable Methods</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2015/04/01/when-to-use-what/" title="Next Post: When to use what">When to use what &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/04/01/sql-injection/">SQL Injection</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/01/ruby-vs-javascript/">Ruby vs JavaScript</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/01/when-to-use-what/">When to Use What</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/01/chutes-and-ladders-or-d-and-d/">Chutes and Ladders or D&amp;D?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/01/enumerable-methods/">Enumerable Methods</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/benlights">@benlights</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'benlights',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus googleplus-hidden">
+  <h1>
+    <a href="https://plus.google.com/+MendelSchneerson?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Mendel Schneerson -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'benlights';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://benlights.github.io/blog/2015/04/01/chutes-and-ladders-or-d-and-d/';
+        var disqus_url = 'http://benlights.github.io/blog/2015/04/01/chutes-and-ladders-or-d-and-d/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
