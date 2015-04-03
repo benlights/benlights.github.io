@@ -4,7 +4,7 @@
   <title><![CDATA[DBC Blog]]></title>
   <link href="http://benlights.github.io/atom.xml" rel="self"/>
   <link href="http://benlights.github.io/"/>
-  <updated>2015-04-02T23:41:02-04:00</updated>
+  <updated>2015-04-03T00:28:37-04:00</updated>
   <id>http://benlights.github.io/</id>
   <author>
     <name><![CDATA[Mendel Schneerson]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Asking the Right Questions]]></title>
+    <link href="http://benlights.github.io/blog/2015/04/03/asking-the-right-questions/"/>
+    <updated>2015-04-03T00:03:10-04:00</updated>
+    <id>http://benlights.github.io/blog/2015/04/03/asking-the-right-questions</id>
+    <content type="html"><![CDATA[<h4>Week Nine Cultural Blog post</h4>
+
+<h3>How not to Ask</h3>
+
+<p>A few months ago I was playing around with Kali Linux using a virtual machine in windows. I was having a problem switching to the Superuser using the <code>su</code> command.</p>
+
+<h4>Below is my question the way I originally posted it.</h4>
+
+<hr />
+
+<h5>su cannot execute bin/bash/****</h5>
+
+<p>Hi I installed kali Linux on a vm machine and I cannot change my user to root from the terminal using su. sudo works fine but whe I try su it says   cannot execute bin/bash/****(my user name) not a directory.</p>
+
+<p>Thank you,</p>
+
+<h4>And this is what a helpful user turned it into.</h4>
+
+<hr />
+
+<h5>su cannot execute bin/bash/****</h5>
+
+<p>I installed Kali Linux on a VM machine and I cannot change my user to root from the terminal using <code>su</code>. The command <code>sudo</code> works fine but when I try to <code>su</code>, it says &ldquo;cannot execute bin/bash/****(my user name) not a directory&rdquo;.</p>
+
+<hr />
+
+<p>Looking at the differences he did not change much if at all in terms of technical info. Where he did shine though is making my question readable. The question I submitted looked like a tweenager text. Looking back now I do not know if I would have answered it myself, seeing as the poster (me) did not really have any attention to detail.</p>
+
+<p>And yes my question was answered and it resolved my issue.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Rebuilding My Blog]]></title>

@@ -9,7 +9,7 @@
   <meta name="author" content="Mendel Schneerson">
 
   
-  <meta name="description" content="Week Nine Technical Blog post Octopress This week one of the challenges were to redo our blog. I decided to use a framework to help accomplish that. &hellip;">
+  <meta name="description" content="Week Nine Cultural Blog post How not to Ask A few months ago I was playing around with Kali Linux using a virtual machine in windows. I was having a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +79,66 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/04/03/asking-the-right-questions/">Asking the Right Questions</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-04-03T00:03:10-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>12:03 am</span></time>
+        
+           | <a href="/blog/2015/04/03/asking-the-right-questions/#disqus_thread"
+             data-disqus-identifier="http://benlights.github.io/blog/2015/04/03/asking-the-right-questions/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>Week Nine Cultural Blog post</h4>
+
+<h3>How not to Ask</h3>
+
+<p>A few months ago I was playing around with Kali Linux using a virtual machine in windows. I was having a problem switching to the Superuser using the <code>su</code> command.</p>
+
+<h4>Below is my question the way I originally posted it.</h4>
+
+<hr />
+
+<h5>su cannot execute bin/bash/****</h5>
+
+<p>Hi I installed kali Linux on a vm machine and I cannot change my user to root from the terminal using su. sudo works fine but whe I try su it says   cannot execute bin/bash/****(my user name) not a directory.</p>
+
+<p>Thank you,</p>
+
+<h4>And this is what a helpful user turned it into.</h4>
+
+<hr />
+
+<h5>su cannot execute bin/bash/****</h5>
+
+<p>I installed Kali Linux on a VM machine and I cannot change my user to root from the terminal using <code>su</code>. The command <code>sudo</code> works fine but when I try to <code>su</code>, it says &ldquo;cannot execute bin/bash/****(my user name) not a directory&rdquo;.</p>
+
+<hr />
+
+<p>Looking at the differences he did not change much if at all in terms of technical info. Where he did shine though is making my question readable. The question I submitted looked like a tweenager text. Looking back now I do not know if I would have answered it myself, seeing as the poster (me) did not really have any attention to detail.</p>
+
+<p>And yes my question was answered and it resolved my issue.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -522,124 +582,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/04/01/dbc-cheat-sheet/">DBC Cheat Sheet</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-01T21:19:02-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:19 pm</span></time>
-        
-           | <a href="/blog/2015/04/01/dbc-cheat-sheet/#disqus_thread"
-             data-disqus-identifier="http://benlights.github.io/blog/2015/04/01/dbc-cheat-sheet/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>Ruby Hashes, Arrays, Strings, Integers</h3>
-
-<h4>Hashes</h4>
-
-<p>If you attempt to access a hash with a key that does not exist, the method will return nil.</p>
-
-<p>You can create an empty hash with the new class method:<code>months = Hash.new</code></p>
-
-<p>You can also use new to create a hash with a default value, which is otherwise just nil:<code>months = Hash.new( "month" )</code>or<code>months = Hash.new "month"</code></p>
-
-<p>You can use any Ruby object as a key or value, even an array, so following example is a valid
-<code>[1,"jan"] =&gt; "January"</code></p>
-
-<h5>A list of useful methods.</h5>
-
-<p><code>hash.delete_if { |key,value| block }</code>
-Deletes a key-value pair from hash for every pair the block evaluates to true.</p>
-
-<p><code>hash.each { |key,value| block }</code>
-Iterates over hash, calling the block once for each key, passing the key-value as a two-element array.</p>
-
-<p><code>hash.each_key { |key| block }</code>Iterates over hash, calling the block once for each key, passing key as a parameter.</p>
-
-<p><code>hash.each_key { |key_value_array| block }</code>Iterates over hash, calling the block once for each key, passing the key and value as parameters.</p>
-
-<p><code>hash.each_key { |value| block }</code>Iterates over hash, calling the block once for each key, passing value as a parameter.</p>
-
-<p><code>hash.empty?</code>Tests whether hash is empty (contains no key-value pairs), returning true or false.</p>
-
-<h4>Arrays</h4>
-
-<p>Creating Arrays:<br/>
-One way is with the new class method:<code>names = Array.new</code><br/>
-You can set the size of an array at the time of creating array:<code>names = Array.new(20)</code><br/>
-here is another method of Array, []. It works like this:<code>nums = Array.[](1, 2, 3, 4,5)</code><br/>
-One more form of array creation is as follows :<code>nums = Array[1, 2, 3, 4,5]</code></p>
-
-<h5>A list of useful methods.</h5>
-
-<p><code>array.clear</code>Removes all elements from array.</p>
-
-<p><code>array.collect { |item| block } [or]``array.map { |item| block }</code>Invokes block once for each element of self. Creates a new array containing the values returned by the block.</p>
-
-<p><code>array.collect! { |item| block } [or] array.map! { |item| block }</code>Invokes block once for each element of self, replacing the element with the value returned by block.</p>
-
-<p><code>array.delete_if { |item| block }</code>Deletes every element of self for which block evaluates to true.</p>
-
-<p><code>array.each { |item| block }</code>Calls block once for each element in self, passing that element as a parameter.</p>
-
-<p><code>array.each_index { |index| block }</code>Same as Array#each, but passes the index of the element instead of the element itself. array.empty? Returns true if the self array contains no elements.</p>
-
-<p><code>array.eql?(other)</code>Returns true if array and other are the same object, or are both arrays with the same content.</p>
-
-<h4>Strings</h4>
-
-<h5>A list of useful methods.</h5>
-
-<p><code>str * integer</code>Returns a new string containing integer times str. In other words, str is repeated integer imes.</p>
-
-<p><code>str.capitalize</code>Capitalizes a string.</p>
-
-<p><code>str.casecmp</code>Makes a case-insensitive comparison of strings.</p>
-
-<p><code>str.chop</code>Removes the last character in str.</p>
-
-<p><code>str.downcase</code>Returns a copy of str with all uppercase letters replaced with lowercase.</p>
-
-<p><code>str.include? other_str [or] str.include? fixnum</code>Returns true if str contains the given string or character.
-<code>str.reverse</code>Returns a new string with the characters from str in reverse order.</p>
-
-<p><code>str.split(pattern=$;, [limit])</code>Divides str into substrings based on a delimiter, returning an array of these substrings. If pattern is a String, then its contents are used as the delimiter when splitting str. If pattern is a single space, str is split on whitespace, with leading whitespace and runs of contiguous whitespace characters ignored.</p>
-
-<p><code>str.swapcase</code>Returns a copy of str with uppercase alphabetic characters converted to lowercase and lowercase characters converted to uppercase.</p>
-
-<h4>Integers</h4>
-
-<h5>A list of useful methods.</h5>
-
-<p><code>next → integer</code> Returns the Integer equal to int + 1, same as #next.</p>
-
-<p><code>pred → integer</code>Returns the Integer equal to int</p>
-
-<p><code>odd? → true or false</code>Returns true if int is an odd number.</p>
-
-<p><code>Round([ndigits]) → integer or float</code>Rounds int to a given precision in decimal digits (default 0 digits). Precision may be negative. Returns a floating point number when ndigits is positive, self for zero, and round down for negative.</p>
-
-<p><code>chr([encoding]) → string</code>Returns a string containing the character represented by the int‘s value according to encoding.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -655,6 +597,10 @@ One more form of array creation is as follows :<code>nums = Array[1, 2, 3, 4,5]<
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/04/03/asking-the-right-questions/">Asking the Right Questions</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/04/02/rebuilding-my-blog/">Rebuilding My Blog</a>
       </li>
     
@@ -668,10 +614,6 @@ One more form of array creation is as follows :<code>nums = Array[1, 2, 3, 4,5]<
     
       <li class="post">
         <a href="/blog/2015/04/01/when-to-use-what/">When to Use What</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/04/01/chutes-and-ladders-or-d-and-d/">Chutes and Ladders or D&amp;D?</a>
       </li>
     
   </ul>
