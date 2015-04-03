@@ -71,6 +71,7 @@
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
   <li><a href="/about-me/">About Me</a></li>
+  <li><a href="/contact/">Contact</a></li>
 </ul>
 
 </nav>
@@ -112,12 +113,11 @@
 
 <p>Incorrectly filtered escape characters.</p>
 
-<p>This type of SQL Injection occurs when input from user entry fields are not filtered for escape characters. Escape characters are special characters used in programming that tell the program, that the character after them is not to be read the usual way rather as a different character. A common example is the &ldquo;\&rdquo;.</p>
+<p>This type of SQL Injection occurs when input from user entry fields are not filtered for escape characters. Escape characters are special characters used in programming that tell the program, that the character after them is not to be read the usual way rather as a different character. A common example is the &ldquo; \&rdquo;.</p>
 
 <p>For example, an name entry field in a website. The website takes the input from the field and turns it into a select statement.</p>
 
-<pre><code>`SELECT * from USERS WHERE name = (entry field);`
-</code></pre>
+<p><code>SELECT * from USERS WHERE name = (entry field);</code></p>
 
 <p>This code looks for the specified user name and returns it from the database.</p>
 
@@ -125,7 +125,7 @@
 
 <p>For example if    <code>'' or '1'='1'</code> is entered it turns into the following SQL statement    <code>SELECT * FROM users WHERE name = '' OR '1'='1'</code>;</p>
 
-<p>This statement would return all the names in the database because<code>1 = 1</code> is always true.</p>
+<p>This statement would return all the names in the database because <code>1 = 1</code> is always true.</p>
 
 <p>This vulnerability can also be exploited to delete or modify data in the database. See the story of<a href="https://xkcd.com/327/"> Little Bobby Tables.</a></p>
 </div>
@@ -163,6 +163,8 @@
         <a class="basic-alignment left" href="/blog/2015/04/01/ruby-vs-javascript/" title="Previous Post: Ruby vs JavaScript">&laquo; Ruby vs JavaScript</a>
       
       
+        <a class="basic-alignment right" href="/blog/2015/04/02/rebuilding-my-blog/" title="Next Post: Rebuilding My Blog">Rebuilding My Blog &raquo;</a>
+      
     </p>
   </footer>
 </article>
@@ -182,6 +184,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/04/02/rebuilding-my-blog/">Rebuilding My Blog</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/04/01/sql-injection/">SQL Injection</a>
       </li>
     
@@ -195,10 +201,6 @@
     
       <li class="post">
         <a href="/blog/2015/04/01/chutes-and-ladders-or-d-and-d/">Chutes and Ladders or D&amp;D?</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/04/01/enumerable-methods/">Enumerable Methods</a>
       </li>
     
   </ul>

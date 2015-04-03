@@ -9,7 +9,7 @@
   <meta name="author" content="Mendel Schneerson">
 
   
-  <meta name="description" content="Week Eight Technical Blog Post March 28, 2015 Little Bobby Tables Today I will be writing about SQL Injection. SQL Injection is a way to insert code &hellip;">
+  <meta name="description" content="Week Nine Technical Blog post Octopress This week one of the challenges were to redo our blog. I decided to use a framework to help accomplish that. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +71,7 @@
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
   <li><a href="/about-me/">About Me</a></li>
+  <li><a href="/contact/">Contact</a></li>
 </ul>
 
 </nav>
@@ -78,6 +79,48 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/04/02/rebuilding-my-blog/">Rebuilding My Blog</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-04-02T21:19:37-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2015</span></span> <span class='time'>9:19 pm</span></time>
+        
+           | <a href="/blog/2015/04/02/rebuilding-my-blog/#disqus_thread"
+             data-disqus-identifier="http://benlights.github.io/blog/2015/04/02/rebuilding-my-blog/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>Week Nine Technical Blog post</h4>
+
+<h3>Octopress</h3>
+
+<p>This week one of the challenges were to redo our blog. I decided to use a framework to help accomplish that.</p>
+
+<p>The framework the I chose is called Octopress. I am using it now to generate this blog post. Getting it set up took a lot longer than I initially assumed it would take. Downloading and setting it up was pretty straight forward, the part that gave me the most trouble was how to integrate it with my existing blog that was being hosted by github pages.</p>
+
+<p>To get it to work I had to delete my current repo that contained all of my current data. First I converted all of my previous posts to markdown. I used an online <a href="http://domchristie.github.io/to-markdown/">conversion tool</a> and was left with a little bit of formatting to do manually. I then created a new post for each of the older posts. (This is why all of my post written before April have the same date.) The next step was to create a new blank repo on github that pointed to my github page. Then I had to deploy and push my new blog.</p>
+
+<p>After working through many issues I managed to get it live. This is why this blog has a &ldquo;new and improved&rdquo; look.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -115,12 +158,11 @@
 
 <p>Incorrectly filtered escape characters.</p>
 
-<p>This type of SQL Injection occurs when input from user entry fields are not filtered for escape characters. Escape characters are special characters used in programming that tell the program, that the character after them is not to be read the usual way rather as a different character. A common example is the &ldquo;\&rdquo;.</p>
+<p>This type of SQL Injection occurs when input from user entry fields are not filtered for escape characters. Escape characters are special characters used in programming that tell the program, that the character after them is not to be read the usual way rather as a different character. A common example is the &ldquo; \&rdquo;.</p>
 
 <p>For example, an name entry field in a website. The website takes the input from the field and turns it into a select statement.</p>
 
-<pre><code>`SELECT * from USERS WHERE name = (entry field);`
-</code></pre>
+<p><code>SELECT * from USERS WHERE name = (entry field);</code></p>
 
 <p>This code looks for the specified user name and returns it from the database.</p>
 
@@ -128,7 +170,7 @@
 
 <p>For example if    <code>'' or '1'='1'</code> is entered it turns into the following SQL statement    <code>SELECT * FROM users WHERE name = '' OR '1'='1'</code>;</p>
 
-<p>This statement would return all the names in the database because<code>1 = 1</code> is always true.</p>
+<p>This statement would return all the names in the database because <code>1 = 1</code> is always true.</p>
 
 <p>This vulnerability can also be exploited to delete or modify data in the database. See the story of<a href="https://xkcd.com/327/"> Little Bobby Tables.</a></p>
 </div>
@@ -598,54 +640,6 @@ One more form of array creation is as follows :<code>nums = Array[1, 2, 3, 4,5]<
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/04/01/conflict/">Conflict</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-04-01T21:16:57-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>9:16 pm</span></time>
-        
-           | <a href="/blog/2015/04/01/conflict/#disqus_thread"
-             data-disqus-identifier="http://benlights.github.io/blog/2015/04/01/conflict/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>Week Eight Cultural Blog Post</h4>
-
-<h5>March 29, 2015</h5>
-
-<h3>Conflict and How To Deal With It.</h3>
-
-<p>Today I will be writing about a conflict I had and looking back at it.</p>
-
-<p>out what is inside it looks like my handbags are a lost but the laptop bag is visible. So now I&rsquo;m waiting to find out if the laptop is in it.</p>
-
-<p>A few months ago I flew to Fl. with some friends for a wedding. At the airport one of my friends was getting out of hand and acting as if the wedding and the drinking had started. It was very embarrassing walking through the crowded airport with him screaming and cursing I asked him to calm down and to please stop making a scene, he refused and the fight started.</p>
-
-<p>Looking back at the conflict the major emotions I was feeling were embarrassment and frustration. The actions that I took then to try and solve the problem were to speak to him and to try to get him to realize that he was making people uncomfortable.</p>
-
-<p>If I can change the past I would go back and and change the way I spoke to him. I would speak in a calm and collected manner and not show him my aggravation.</p>
-
-<p>I learned from this experience to control my emotions better and not to let the other person see that he or she has effected me.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -661,6 +655,10 @@ One more form of array creation is as follows :<code>nums = Array[1, 2, 3, 4,5]<
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/04/02/rebuilding-my-blog/">Rebuilding My Blog</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/04/01/sql-injection/">SQL Injection</a>
       </li>
     
@@ -674,10 +672,6 @@ One more form of array creation is as follows :<code>nums = Array[1, 2, 3, 4,5]<
     
       <li class="post">
         <a href="/blog/2015/04/01/chutes-and-ladders-or-d-and-d/">Chutes and Ladders or D&amp;D?</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/04/01/enumerable-methods/">Enumerable Methods</a>
       </li>
     
   </ul>

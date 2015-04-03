@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://benlights.github.io/blog/2015/04/02/rebuilding-my-blog/</loc>
+    <lastmod>2015-04-02T21:19:37-04:00</lastmod>
+  </url>
+  <url>
     <loc>http://benlights.github.io/blog/2015/04/01/sql-injection/</loc>
     <lastmod>2015-04-01T21:36:19-04:00</lastmod>
   </url>
@@ -69,6 +73,9 @@
   </url>
   <url>
     <loc>http://benlights.github.io/blog/archives/</loc>
+  </url>
+  <url>
+    <loc>http://benlights.github.io/contact/</loc>
   </url>
   <url>
     <loc>http://benlights.github.io/about-me/</loc>
