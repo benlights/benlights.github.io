@@ -9,7 +9,7 @@ footer: true
 Email: <mendel@benlights.com>
 
 
-Twitter: [@mendelsla](https://twitter.com/MendelSLA)
+Twitter: [@mmschneerson](https://twitter.com/mmschneerson)
 
 LinkedIn: [My Profile](http://www.linkedin.com/pub/menachem-schneerson/84/a73/621/en)
 
